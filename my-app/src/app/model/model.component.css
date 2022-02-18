@@ -1,0 +1,24 @@
+h1{
+  text-align: center
+}
+.carA{
+  width: 500px;
+  height: 300px;
+  border: 2px solid #f66d52;
+  background: #ccc
+
+}
+h4{
+  text-align: center
+}
+body{
+  height: 1000px;
+  background:url(https://www.mercedes-benz.by/content/dam/cee/retailer/retail-belarus/belarus/retail_landingpage_home-site.jpg.asset.AdyAuKANF_c9V0Ccpn4fqj-JrSyfPn-9CBHWNizoGog.jpg)
+}
+.carB{
+  width: 500px;
+  height: 300px;
+  border: 2px solid #f66d52;
+  background: #ccc
+  }
+
