@@ -1,4 +1,4 @@
-// @ts-ignore
+
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,24 +8,30 @@ import {FormsModule} from "@angular/forms";
 import { ModelComponent } from './model/model.component';
 import { ModelInStockComponent } from './model-in-stock/model-in-stock.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { Routes, RouterModule } from "@angular/router";
+import { Routes,Router, RouterModule } from "@angular/router";
+import { BuylogComponent } from './buylog/buylog.component';
+
+
 
 const appRoutes: Routes = [
   {path :'',component: ModelComponent} ,
 {path : 'ModelInStock' ,component : ModelInStockComponent},
   {path : 'Contacts' ,component : ContactsComponent},
-  ]
+  {path : '**' ,component : BuylogComponent},
+  ];
+
 @NgModule({
   declarations: [
     AppComponent,
     ModelComponent,
     ModelInStockComponent,
-    ContactsComponent
+    ContactsComponent,
+    BuylogComponent
   ],
     imports: [
         BrowserModule,
         FormsModule,
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
     ],
   providers: [],
   bootstrap: [AppComponent]
