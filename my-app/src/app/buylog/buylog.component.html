@@ -1,4 +1,33 @@
+<html lang="ru">
 
-<div  class = "buy" >
-  <button (click)="myEvent($event)" > Купить  </button >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+</head>
+
+<body>
+
+<div>
+
+  <h1>Заполните пожалуйста данные для связи с Вами </h1>
+  <form action ='#'(ngSubmit)="onSubmit()">
+  <div class="text-field">
+    <label class="text-field__label" >Имя</label>
+    <input  [(ngModel)]="Name" class="text-field__input"   type="text" name="login" id="Name" placeholder="Имя">
+  </div>
+  <div class="text-field">
+    <label class="text-field__label" >Телефон</label>
+    <input [(ngModel)]="number" class="text-field__input"  type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone"/>
+  </div>
+  <div class="text-field">
+    <label class="text-field__label" for="email">Email</label>
+    <input [(ngModel)]="email" class="text-field__input"  type="text" name="email" id="email" placeholder="Email">
+  </div>
+    <button type="submit">Отправить</button>
+  </form>
 </div>
+
+</body>
+
+</html>

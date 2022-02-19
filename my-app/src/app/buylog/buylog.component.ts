@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import {Router, Routes} from "@angular/router"
 @Component({
@@ -6,14 +8,24 @@ import {Router, Routes} from "@angular/router"
   styleUrls: ['./buylog.component.css']
 })
 export class BuylogComponent implements OnInit {
+  Name = '';
+  number = '';
+  email = '';
+  constructor() { }
+  onSubmit () {
+    if (this.Name && this.number  && this.email) {
+//Todo submit
+      alert('Спасибо за заполнение, мы с Вами свяжемся!');
 
-  constructor(private router: Router) { }
-
-  myEvent($event: MouseEvent){
-this.router.navigate(['/buylog']);
-  }
+      this.Name = this.number = this.email = ' ';
+      return;
+    }
+    alert('Заполните, пожалуйста все данные для связи с Вами');
+   }
 
   ngOnInit(): void {
   }
 
 }
+
+

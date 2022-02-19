@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router, Routes} from "@angular/router"
 @Component({
   selector: 'app-model',
   templateUrl: './model.component.html',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  myEvent($event: MouseEvent){
+    this.router.navigate(['/buylog']);
+  }
 
   ngOnInit(): void {
   }
