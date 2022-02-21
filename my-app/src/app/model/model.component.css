@@ -1,31 +1,29 @@
 h1{
-  text-align: center
-}
-.carA{
-  width: 500px;
-  height: 300px;
-  border: 2px solid #f66d52;
-  background: #ccc
-
-}
-h4{
-  text-align: center
-}
-body{
-  height: 1000px;
-  background:url(https://www.mercedes-benz.by/content/dam/cee/retailer/retail-belarus/belarus/retail_landingpage_home-site.jpg.asset.AdyAuKANF_c9V0Ccpn4fqj-JrSyfPn-9CBHWNizoGog.jpg)
-}
-.carB{
-  width: 500px;
-  height: 300px;
-  border: 2px solid #f66d52;
-  background: #ccc
-  }
-
-.buy{
   text-align: center;
-  display: table-cell;
-  width: 490px;}
+  list-style-type:none ;
+  color: black;
+  font-size: 29px;
+  font-family: «Libre Baskerville», serif;
+  line-height: 45px;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+
+}
+
+li{
+  list-style-type:none ;
+  color: #7a7c7f;
+  font-size: 29px;
+  font-family: «Libre Baskerville», serif;
+  line-height: 45px;
+text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+
+}
+
+
+
 
 .btn {
   display: inline-block;

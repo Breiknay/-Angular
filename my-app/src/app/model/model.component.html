@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>MyApp</title>
@@ -9,28 +9,22 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<h1>Модельный ряд</h1>
+<ul>
 
-  <h1>Модельный ряд</h1>
-  <div class="carA">
-    <h4>A- Class hatchback</h4>
+  <li *ngFor="let car of cars
+   let even = even
+   let odd = odd"[ngClass]="{even:even,odd:odd}"> {{car.nameCar}}<br><br>
+   <img src= {{car.carImg}}>
+    <br>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+    <hr/>
 
-    <div  class = "buy" >
+  </li>
 
-      <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-    </div>
 
-    <img src="https://mbbelarus.by/upload/resize_cache/iblock/fc1/438_274_1/x6sgw9cdv0jockx926yza3oycb2a1auik.png.pagespeed.ic.UUoE9bo_Da.webp">
-    <div class="carB">
-      <h4>GLB</h4>
+</ul>
 
-      <div  class = "buy" >
-
-        <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-      </div>
-
-      <img src="https://mbbelarus.by/upload/resize_cache/iblock/6d9/438_274_1/xgeiumejybi9ex8l4vpqmdlcfyhzqf27d.png.pagespeed.ic.J-ayuKcGUG.webp">
-    </div>
-  </div>
 
 
 </body>
