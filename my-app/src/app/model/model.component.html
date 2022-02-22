@@ -1,4 +1,4 @@
-
+<router-outlet></router-outlet>
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -9,15 +9,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<h1>Модельный ряд</h1>
+<router-outlet></router-outlet>
 
+
+
+
+<h1>Модельный ряд</h1><br>
 <mat-card class="example-card">
+
   <mat-card-title-group>
     <mat-card-title>{{nameCarGle}}</mat-card-title>
 
     <img mat-card-xll-image src="{{carImgGle}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -29,6 +35,7 @@
     <img mat-card-xll-image src="{{carImgE}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -40,6 +47,7 @@
     <img mat-card-xll-image src="{{carImgS}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -51,6 +59,7 @@
     <img mat-card-xll-image src="{{carImgGls}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -62,6 +71,7 @@
     <img mat-card-xll-image src="{{carImgC}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -73,6 +83,7 @@
     <img mat-card-xll-image src="{{carImgCla}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -84,6 +95,7 @@
     <img mat-card-xll-image src="{{carImgG}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
@@ -95,8 +107,10 @@
     <img mat-card-xll-image src="{{carImgV}}" >
   </mat-card-title-group>
   <mat-card-content>
+    {{longText}} <br>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
   </mat-card-content>
 </mat-card>
+
 </body>
 </html>

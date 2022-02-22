@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router, Routes} from "@angular/router";
+import {Router} from "@angular/router";
 
 
 
@@ -36,7 +36,9 @@ export class ModelComponent implements OnInit {
     nameCarV = 'V-class'
       carImgV = 'https://mbbelarus.by/upload/resize_cache/iblock/498/438_274_1/xafz3817lpendglyygvyod0m6p2oe8px8.png.pagespeed.ic.n7URZbOjdK.webp'
 
-
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
 
   constructor(private router: Router) { }
 

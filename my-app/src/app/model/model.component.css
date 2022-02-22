@@ -1,3 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
 h1{
   text-align: center;
   list-style-type:none ;
@@ -12,25 +36,28 @@ h1{
 
 
 .mat-card-title{
-  text-align: center;
+  align-items: center;
   color: #212529;
   color: #7a7c7f;
   font-size: 29px;
   font-family: «Libre Baskerville», serif;
   line-height: 45px;
-  text-align: center;
   text-shadow: 0 1px 1px #fff;
   padding-top: 20px;
 
 }
 
-.example-card {
 
-  max-width: 1000px;
+
+.example-card {
+  width: 100vh;
+  margin-left:auto;
+  margin-right:auto;
   margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 
 
 
