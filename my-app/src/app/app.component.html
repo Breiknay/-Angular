@@ -1,13 +1,6 @@
-<router-outlet></router-outlet>
-<div class = top > <nav>
-  <a routerLink="">Модельный ряд</a>
-  <a routerLink="/ModelInStock">Модели в наличии</a>
-  <a routerLink="/Contacts"> Контакты</a>
-
-</nav>
-  <router-outlet></router-outlet>
-</div>
-
-
-
-
+<mat-tab-group>
+  <mat-tab label= "Модельный ряд"><app-model></app-model>
+  </mat-tab>
+  <mat-tab label ="Модели в наличии"><app-model-in-stock></app-model-in-stock></mat-tab>
+  <mat-tab label ="Контакты"><app-contacts></app-contacts></mat-tab>
+</mat-tab-group>

@@ -1,5 +1,6 @@
 import {Component, NgModule} from '@angular/core';
 import { MatSliderModule } from '@angular/material/slider';
+
 @Component({
   selector: 'app-root',
     templateUrl: './app.component.html',
@@ -7,11 +8,21 @@ import { MatSliderModule } from '@angular/material/slider';
 
 })
 export class AppComponent {
+
+
   title = 'my-app';
+
+
+
+
 }
 @NgModule ({
   imports: [
     MatSliderModule,
   ]
+
 })
-class AppModule {}
+
+class AppModule {
+
+}
