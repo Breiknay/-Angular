@@ -10,16 +10,25 @@ h1{
 
 }
 
-li{
-  list-style-type:none ;
+
+.mat-card-title{
+  text-align: center;
+  color: #212529;
   color: #7a7c7f;
   font-size: 29px;
   font-family: «Libre Baskerville», serif;
   line-height: 45px;
-text-align: center;
+  text-align: center;
   text-shadow: 0 1px 1px #fff;
   padding-top: 20px;
 
+}
+
+.example-card {
+
+  max-width: 1000px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 

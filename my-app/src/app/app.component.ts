@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import {Component, NgModule} from '@angular/core';
+import { MatSliderModule } from '@angular/material/slider';
 @Component({
   selector: 'app-root',
     templateUrl: './app.component.html',
@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
 }
-
+@NgModule ({
+  imports: [
+    MatSliderModule,
+  ]
+})
+class AppModule {}

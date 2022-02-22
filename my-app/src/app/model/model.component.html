@@ -10,22 +10,93 @@
 </head>
 <body>
 <h1>Модельный ряд</h1>
-<ul>
 
-  <li *ngFor="let car of cars
-   let even = even
-   let odd = odd"[ngClass]="{even:even,odd:odd}"> {{car.nameCar}}<br><br>
-   <img src= {{car.carImg}}>
-    <br>
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarGle}}</mat-card-title>
+
+    <img mat-card-xll-image src="{{carImgGle}}" >
+  </mat-card-title-group>
+  <mat-card-content>
     <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-    <hr/>
+  </mat-card-content>
+</mat-card>
 
-  </li>
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarE}}</mat-card-title>
 
+    <img mat-card-xll-image src="{{carImgE}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
 
-</ul>
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarS}}</mat-card-title>
 
+    <img mat-card-xll-image src="{{carImgS}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
 
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarGls}}</mat-card-title>
 
+    <img mat-card-xll-image src="{{carImgGls}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarC}}</mat-card-title>
+
+    <img mat-card-xll-image src="{{carImgC}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarCla}}</mat-card-title>
+
+    <img mat-card-xll-image src="{{carImgCla}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarG}}</mat-card-title>
+
+    <img mat-card-xll-image src="{{carImgG}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{nameCarV}}</mat-card-title>
+
+    <img mat-card-xll-image src="{{carImgV}}" >
+  </mat-card-title-group>
+  <mat-card-content>
+    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+  </mat-card-content>
+</mat-card>
 </body>
 </html>

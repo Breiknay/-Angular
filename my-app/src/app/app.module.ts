@@ -10,6 +10,9 @@ import { ModelInStockComponent } from './model-in-stock/model-in-stock.component
 import { ContactsComponent } from './contacts/contacts.component';
 import { Routes,Router, RouterModule } from "@angular/router";
 import { BuylogComponent } from './buylog/buylog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from "@angular/material/slider";
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -26,13 +29,18 @@ const appRoutes: Routes = [
     ModelComponent,
     ModelInStockComponent,
     ContactsComponent,
-    BuylogComponent
+    BuylogComponent,
+
   ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-      RouterModule.forRoot(appRoutes),
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatCardModule,
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

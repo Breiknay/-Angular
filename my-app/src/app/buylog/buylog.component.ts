@@ -8,6 +8,8 @@ import {Router, Routes} from "@angular/router"
   styleUrls: ['./buylog.component.css']
 })
 export class BuylogComponent implements OnInit {
+
+
   Name = '';
   number = '';
   email = '';
