@@ -17,6 +17,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {MatDividerModule} from '@angular/material/divider'
 import {MatButtonModule} from '@angular/material/button'
 import {MatIconModule} from "@angular/material/icon";
+import {MatListModule} from "@angular/material/list";
 
 const appRoutes: Routes = [
   {path :'',component: ModelComponent} ,
@@ -34,18 +35,20 @@ const appRoutes: Routes = [
     BuylogComponent,
 
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule,
-    MatSliderModule,
-    MatCardModule,
-    MatTabsModule,
-    MatDividerModule,
-    MatIconModule,
+    imports: [
+        BrowserModule,
+        FormsModule,
+        RouterModule.forRoot(appRoutes),
+        BrowserAnimationsModule,
+        MatSliderModule,
+        MatCardModule,
+        MatTabsModule,
+        MatDividerModule,
+        MatIconModule,
+        MatListModule,
+      MatButtonModule,
 
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

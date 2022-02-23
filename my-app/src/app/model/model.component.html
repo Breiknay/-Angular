@@ -12,105 +12,30 @@
 <router-outlet></router-outlet>
 
 
-
-
 <h1>Модельный ряд</h1><br>
-<mat-card class="example-card">
 
+<mat-card *ngFor="let Car of cars"  class="example-card">
   <mat-card-title-group>
-    <mat-card-title>{{nameCarGle}}</mat-card-title>
-
-    <img mat-card-xll-image src="{{carImgGle}}" >
+    <mat-card-title>{{Car.nameCar}}</mat-card-title>
+    <mat-card-subtitle>
+      <div class="example-button-row">
+      <button (click)="myEvent($event)" mat-raised-button color="warn"><span>Купить</span></button>
+      </div>
+    </mat-card-subtitle>
+    <img mat-card-xll-image src="{{Car.carImg}}" >
   </mat-card-title-group>
   <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
+    {{Car.longText}}
   </mat-card-content>
 </mat-card>
 
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarE}}</mat-card-title>
 
-    <img mat-card-xll-image src="{{carImgE}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
 
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarS}}</mat-card-title>
 
-    <img mat-card-xll-image src="{{carImgS}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
 
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarGls}}</mat-card-title>
 
-    <img mat-card-xll-image src="{{carImgGls}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
 
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarC}}</mat-card-title>
 
-    <img mat-card-xll-image src="{{carImgC}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
-
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarCla}}</mat-card-title>
-
-    <img mat-card-xll-image src="{{carImgCla}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
-
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarG}}</mat-card-title>
-
-    <img mat-card-xll-image src="{{carImgG}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
-
-<mat-card class="example-card">
-  <mat-card-title-group>
-    <mat-card-title>{{nameCarV}}</mat-card-title>
-
-    <img mat-card-xll-image src="{{carImgV}}" >
-  </mat-card-title-group>
-  <mat-card-content>
-    {{longText}} <br>
-    <button  (click)="myEvent($event)" class="btn"><span>Купить</span></button>
-  </mat-card-content>
-</mat-card>
 
 </body>
 </html>
