@@ -18,6 +18,8 @@ import {MatDividerModule} from '@angular/material/divider'
 import {MatButtonModule} from '@angular/material/button'
 import {MatIconModule} from "@angular/material/icon";
 import {MatListModule} from "@angular/material/list";
+import { ApiService } from './api.service';
+import {HttpClientModule} from "@angular/common/http";
 
 const appRoutes: Routes = [
   {path :'',component: ModelComponent} ,
@@ -47,9 +49,10 @@ const appRoutes: Routes = [
         MatIconModule,
         MatListModule,
       MatButtonModule,
+      HttpClientModule
 
     ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
